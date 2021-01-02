@@ -1,0 +1,302 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+a{
+  text-decoration: none;
+  color: inherit;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+  -webkit-transition: all 0.5s ease-in;
+  -moz-transition: all 0.5s ease-in;
+  -ms-transition: all 0.5s ease-in;
+  -o-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+  font-size: 1vw;
+}
+.max-width{
+    padding: 5px 50px;
+    margin: auto;
+}
+.about .about-content,
+.services .serv-content,
+.skills .skills-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+/* navbar styling */
+.max-width-nav{
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px;
+  margin: auto;
+}
+.navbar{
+    position: fixed;
+    top: 0px;
+    margin: 0px;
+    width: 100%;
+    z-index: 999;
+    padding: 0px 0;
+    font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(52, 73, 94, 0.4);
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.25);
+}
+.navbar.sticky{
+    padding: 1px 0;
+    background:#fff;
+    color: red ;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: #FD0101;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    background-color:  #FD0101;
+    padding: 0px 5px;
+    border-radius: 10px;
+    transition: color 0.3s ease;
+}
+.navbar.sticky .menu li a:hover{
+    color: #fff;
+}
+/* menu btn styling */
+.menu-btn{
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+    color: #FD0101;
+}
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: #FD0101;
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.scroll-up-btn:hover{
+    filter: brightness(90%);
+}
+/* home section styling */
+.home{
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+.home-content {
+font-size: 16px;
+font-weight: 600;
+text-align: center;
+ position: fixed;
+ padding: 10px;
+ border-radius: 10px;
+ top:80vh;
+ left: 50%;
+ z-index: -1;
+ background-color: rgba(0, 0, 0, 0.4);
+ transform: translate(-50%, -50%);
+}
+#videoBG {
+    position:fixed;
+    z-index: -1;
+}
+@media (min-aspect-ratio: 16/9) {
+    #videoBG {
+        width:100%;
+        height: auto;
+        margin: auto;
+        left: 50%;
+        position:fixed;
+        top:50%;
+        transform: translate(-50%, -50%);
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #videoBG {
+        width:auto;
+        height: 100%;
+        margin: auto;
+        left: 50%;
+        position:fixed;
+        top:50%;
+        transform: translate(-50%, -50%);
+      }
+}
+.home-content h2{
+  letter-spacing: 2px;
+}
+.home-content h1{
+  color: #fff;
+  font-size: 2.5vw;
+}
+.home-content p{
+  letter-spacing: 2px;
+}
+.main-about{
+  margin-top: 100vh;
+  background-color: #FD0101;
+  display:flex;
+  width: 100%;
+  align-items: center;
+}
+.main-about-content{
+  color: white;
+  float: left;
+  width: 60%;
+  padding: 50px 50px;
+  overflow: hidden;
+  font-size: 1.3vw;
+}
+.main-about-content p{
+  padding-bottom: 20px;
+}
+.main-about-content a{
+  background-color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+  color:  #FD0101;
+  font-size: 1vw;
+}
+.main-about-img img{
+  float: right;
+  width:100%;
+  padding: 00px;
+  height: 90%;
+}
+
+/* services section styling */
+.services{
+    color:#fff;
+    background: #111;
+    padding-top:50px;
+}
+.services .title::before,
+.teams .title::before{
+    background: #fff;
+}
+.services .title::after,
+.teams .title::after{
+    background: #111;
+}
+.services .serv-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover{
+    background: #FD0101;
+}
+.services .serv-content .card .box{
+    transition: all 0.3s ease;
+}
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.services .serv-content .card i{
+    font-size: 50px;
+    color: #FD0101;
+    transition: color 0.3s ease;
+}
+.services .serv-content .card:hover i{
+    color: #fff;
+}
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.serv-content{
+  margin-bottom: 20px;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid #FD0101!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: #FD0101!important;
+}
+/* footer section styling */
+footer{
+    background: #111;
+    padding: 15px 23px;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: #FD0101;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+/* @media only screen and (min-width : 1025px) and (max-width : 1366px) {}
+@media only screen and (min-width : 641px) and (max-width : 1024px) {}
+@media only screen and (min-width : 320px) and (max-width :640px) {} */

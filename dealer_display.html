@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CASSENS</title>
+    <link rel="stylesheet" href="dealer_display.css">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/adfeae5f42.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+</head>
+<body>
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+    <nav class="navbar">
+        <div class="max-width-nav">
+            <!-- <div class="logo"><img src="./cassenslogo.svg" alt=""> </div> -->
+            <div class="logo"><img src="./logo.png" alt=""> </div>
+            <ul class="menu">
+                <li><a href="./index.html" class="menu-btn">Home</a></li>
+                <li><a href="./aboutus.html" class="menu-btn">About Us</a></li>
+                <li><a href="#skills" class="menu-btn">Locations</a></li>
+                <li><a href="#contact" class="menu-btn">Careers</a></li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="dealer-display">
+      <h2 class="title">Dealer Display</h2>
+      <p>Dedicated to providing premier logistics services with the best people, innovative methods and cutting edge technology.</p>
+    </div>
+    <section class="contact" id="contact">
+        <div class="max-width-dealer_display">
+            <!-- <h2 class="title">Dealer display</h2> -->
+            <div class="contact-content">
+                <div class="column left">
+                    <div class="text">Note</div>
+                    <p style="color:black;">Enter only one or two words in your dealership name for best results. For example, to find info for Cassens & Sons Chrysler Dodge Jeep Ram, just search for “CASSENS”. You will have a different dealer code for each manufacturer.</p>
+                    <p>Please click <a style="color:red;" href="https://prezi.com/view/AUhdm6gMBQ9ncVja8t9n/">here</a> for Delivery Instructions for Dealers</p>
+                </div>
+                <div class="column right">
+                    <p class="subtitle">Cassens Dealer Display :</p>
+                    <p>Please enter a Dealer Code or Name and select the Manufacturer:</p>
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name">
+                                <input type="text" placeholder="Dealer code" required>
+                            </div>
+                        </div>
+                        <p style="color:black; text-align:center;">OR</p>
+                        <div class="fields">
+                            <div class="field name">
+                                  <input type="text" placeholder="Dealer name" required>
+                            </div>
+                        </div>
+                        <div class="fields">
+                            <div class="field name">
+                              <select class="field" id="cars" name="cars" required>
+                                <option value="">Select Manufactures</option>
+                                <option value="FCA">FCA</option>
+                                <option value="Ford">Ford</option>
+                                <option value="General Motors">General Motors</option>
+                                <option value="Audi">Audi</option>
+                                <option value="Hundai">Hyundai</option>
+                                <option value="KIA">KIA</option>
+                                <option value="Mistubishi">Mistubshi</option>
+                                <option value="Nissan">Nissan</option>
+                              </select><br>
+                            </div>
+                        </div>
+                        <div class="fields">
+                            <div class="button">
+                                  <button type="submit">Search</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="max-width">
+            <div class="serv-content">
+              <div class="card">
+                  <div class="box">
+                      <i class="fas fa-sign-in-alt"></i>
+                      <div class="text">DRIVER LOGIN</div>
+                      <p>Drivers can login here for updates</p>
+                  </div>
+              </div>
+              <div class="card">
+                <a href="./delivery_receipt.html">
+                  <div class="box">
+                      <i class="fas fa-file-invoice"></i>
+                      <div class="text">DELIVERY RECEIPT</div>
+                      <p>View Delivery Receipts</p>
+                  </div>
+                </a>
+              </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-tools"></i>
+                        <div class="text">CLAIMS</div>
+                        <p>Submit Dealer Notice Documents</p>
+                    </div>
+                </div>
+               </div>
+            </div>
+        </div>
+        <div class="max-width">
+            <div class="serv-content">
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-shipping-fast"></i>
+                        <div class="text">VIN TRACKING</div>
+                        <p>Check vechile shipping status</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-search-location"></i>
+                        <div class="text">LOCATIONS</div>
+                        <p>View our terminal locations</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <a href="./dealer_display.html">
+                      <div class="box">
+                        <i class="fas fa-id-card-alt"></i>
+                        <div class="text">DEALER DISPLAY</div>
+                        <p>View and Update Dealer Information</p>
+                      </div>
+                    </a>
+                </div>
+               </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer section start -->
+    <footer>
+        <span>Created By <a >CASSENS.COM</a> | <span class="far fa-copyright"></span> 2020 All rights reserved.</span>
+    </footer>
+
+
+</body>
+  <script src="index.js"></script>
+</html>

@@ -22,6 +22,10 @@
 
 }
 /* contact section styling */
+.date-fields{
+  margin: 0px 0px;
+  padding: 5px 0px;
+}
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }

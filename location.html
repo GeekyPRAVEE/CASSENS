@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CASSENS</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="dealer_display.css">
+    <link rel="stylesheet" href="locations.css">
     <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
     <script src="https://kit.fontawesome.com/adfeae5f42.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -13,13 +15,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <style>
-        /*  <span class="metadata-marker" style="display: none;" data-region_tag="css"></span>       Set the size of the div element that contains the map */
-        #map {
-            padding-top: 10%;
+        .map {
+            padding-top: 30px;
             height: 80vh;
-            /* The height is 400 pixels */
-            width: 100%;
-            /* The width is the width of the web page */
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
         }
     </style>
 </head>
@@ -30,11 +31,11 @@
   <nav class="navbar">
       <div class="max-width">
           <!-- <div class="logo"><img src="./cassenslogo.svg" alt=""> </div> -->
-                  <div class="logo"><img src="./logo.png" alt=""> </div>
+          <div class="logo"><img src="./logo.png" alt=""> </div>
           <ul class="menu">
-              <li><a href="./index.html" class="menu-btn">Home</a></li>
-              <li><a href="./aboutus.html" class="menu-btn">About Us</a></li>
-              <li><a href="#skills" class="menu-btn">Locations</a></li>
+            <li><a href="./index.html" class="menu-btn">Home</a></li>
+            <li><a href="./aboutus.html" class="menu-btn">About Us</a></li>
+            <li><a href="./location.html" class="menu-btn">Locations</a></li>
               <li><a href="#contact" class="menu-btn">Careers</a></li>
               <li><a href="#contact" class="menu-btn">Contact</a></li>
           </ul>
@@ -43,50 +44,82 @@
           </div>
       </div>
   </nav>
+  <div class="dealer-display">
+    <h2 class="title">Locations</h2>
+    <p>Dedicated to providing premier logistics services with the best people, innovative methods and cutting edge technology.</p>
+  </div>
+  <div class="map">
+    <iframe class="scrolloff" src="https://www.google.com/maps/d/u/0/embed?mid=1oEho_qayb6B3j5zQA7SOQq0E4b0nJzFJ" width="100%" height="100%"></iframe>
+  </div>
+  <div class="state">
+            <table id="customers">
+                <tr>
+                  <th>State/Province</th>
+                </tr>
+                <tr><td>Illinois</td></tr>
+                <tr><td>Indiana</td></tr>
+                <tr><td>Kentucky</td></tr>
+                <tr><td>Maryland</td></tr>
+                <tr><td>Michigan</td></tr>
+                <tr><td>New Jersey</td></tr>
+                <tr><td>New York</td></tr>
+                <tr><td>Ohio</td></tr>
+                <tr><td>Ontario</td></tr>
+                <tr><td>Pennsylvania</td></tr>
+                <tr><td>Tennessee</td></tr>
+          </table>
+          <table id="customers">
+              <tr>
+                <th>Locations</th>
+              </tr>
+              <tr><td>Aurora, Belvidere, and Hegewisch</td></tr>
+              <tr><td>Lafayette and Princeton</td></tr>
+              <tr><td>Georgetown and Louisville</td></tr>
+              <tr><td>Jessup/Annapolis Junction</td></tr>
+              <tr><td>Detroit and Sterling Heights</td></tr>
+              <tr><td>Newark</td></tr>
+              <tr><td>Niagara </td></tr>
+              <tr><td>Marysville, Toledo, and Lordstown</td></tr>
+              <tr><td>London and Windsor</td></tr>
+              <tr><td>Philadelphia</td></tr>
+              <tr><td>Smyrna</td></tr>
+        </table>
+        <div class="head-quaters"id="customers">
+          <div class="office">
+              <h2>Edwardsville Office</h2>
+              <h3>(Corporate Headquarters)</h3>
+              <p>Cassens Transport Company</p>
+              <p>145 North Kansas Street</p>
+              <p>Edwardsville, IL 62025</p>
+          </div>
+          <div class="contact">
+              <h3>Contact details</h3>
+              <p>Phone : (618) 656-3006</p>
+              <p>Fax : (618) 692-7316</p>
+          </div>
+        </div>
+  </div>
+  <!-- footer section start -->
+  <footer>
+      <span>Created By <a >CASSENS.COM</a> | <span class="far fa-copyright"></span> 2020 All rights reserved.</span>
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <!-- <iframe src="https://www.atlistmaps.com/map/3fe20eb3-83c0-4681-8932-14a52b63123e?share=true" allow="geolocation" width="100%" height="400px" frameborder="0" scrolling="no" allowfullscreen></iframe> -->
-  <div class="map"id="map"></div>
+  <!-- <div class="map"id="map"></div>
   <script type="text/javascript" src="scripts/index.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDz3-nCEAVtczCv0wepkdz3zQchtUatFgc&callback=initMap"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDz3-nCEAVtczCv0wepkdz3zQchtUatFgc&callback=initMap"></script> -->
 </body>
-<script type="text/javascript">
-  function initMap() {
-  var center = {lat: 34.052235, lng: -118.243683};
-  var locations = [
-    ['Philz Coffee<br>\
-    801 S Hope St A, Los Angeles, CA 90017<br>\
-   <a href="https://goo.gl/maps/L8ETMBt7cRA2">Get Directions</a>',   34.046438, -118.259653],
-    ['Philz Coffee<br>\
-    525 Santa Monica Blvd, Santa Monica, CA 90401<br>\
-   <a href="https://goo.gl/maps/PY1abQhuW9C2">Get Directions</a>', 34.017951, -118.493567],
-    ['Philz Coffee<br>\
-    146 South Lake Avenue #106, At Shoppers Lane, Pasadena, CA 91101<br>\
-    <a href="https://goo.gl/maps/eUmyNuMyYNN2">Get Directions</a>', 34.143073, -118.132040],
-    ['Philz Coffee<br>\
-    21016 Pacific Coast Hwy, Huntington Beach, CA 92648<br>\
-    <a href="https://goo.gl/maps/Cp2TZoeGCXw">Get Directions</a>', 33.655199, -117.998640],
-    ['Philz Coffee<br>\
-    252 S Brand Blvd, Glendale, CA 91204<br>\
-   <a href="https://goo.gl/maps/WDr2ef3ccVz">Get Directions</a>', 34.142823, -118.254569]
-  ];
-var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 9,
-    center: center
-  });
-var infowindow =  new google.maps.InfoWindow({});
-var marker, count;
-for (count = 0; count < locations.length; count++) {
-    marker = new google.maps.Marker({
-      position: new google.maps.LatLng(locations[count][1], locations[count][2]),
-      map: map,
-      title: locations[count][0]
-    });
-google.maps.event.addListener(marker, 'click', (function (marker, count) {
-      return function () {
-        infowindow.setContent(locations[count][0]);
-        infowindow.open(map, marker);
-      }
-    })(marker, count));
-  }
-}
-</script>
+<script src="index.js"></script>
 </html>
